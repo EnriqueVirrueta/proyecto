@@ -35,14 +35,9 @@
 
 /*---------------------------------HEADER----------------------------------*/
 header {
-    background-color: rgba(51, 59, 90, 255);
+    background-color: rgb(76, 58, 81);
     display: flex;
     justify-content: center;
-}
-
-header a {
-    display: flex;
-    align-items: center;
 }
 
 .logo {
@@ -54,10 +49,7 @@ header a {
 
 header nav ul li a {
     text-decoration: none;
-    color: rgb(250, 250, 250);
     font-family: 'Press Start 2P', cursive;
-    font-size: 17px;
-    font-weight: 500;
 }
 
 header nav ul {
@@ -76,39 +68,13 @@ header nav ul li:hover {
     transform: scale(1.1);
 }
 
-
-header nav ul li a img {
-    width: 50px;
-    height: 50px;
-}
-
-/*-------------HEADER-----Buscador----------------*/
-
-header nav div a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    margin: 20px;
-}
-
-header nav div input {
-    border-radius: 5px;
-    width: 300px;
-    height: 20px;
-}
-
-header nav div img {
-    width: 35px;
-    height: 35px;
-}
-
-header nav div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*---------------------------------MAIN-----------------------------------*/
+
+/*-------------MAIN-----Carousel----------------*/
+.mainCarousel {
+    width: 100%;
+    height: 400px;
+}
 
 /*-------------MAIN-----Index----------------*/
 
@@ -267,18 +233,9 @@ main {
 
 /*-------------MAIN-----Page playstation y Xbox----------------*/
 
-.play div div {
-    width: 500px;
-    height: 300px;
-    border: 1px solid gainsboro;
-    border-radius: 15px;
-    background-color: rgba(128, 128, 128, 0.664);
-}
-
-.play div div img {
-    width: 200px;
+.play div img {
+    width: 287px;
     height: 200px;
-    border-radius: 15px;
 }
 
 .titulo {
@@ -286,34 +243,29 @@ main {
     text-decoration: none;
 }
 
+.card {
+    transition: 2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
 /*-------------MAIN-----Page registro y contacto----------------*/
 
 .formularios {
-    color: white;
-    width: 500px;
-    height: 700px;
-    border: 1px solid gainsboro;
-    border-radius: 15px;
-    background-color: rgba(128, 128, 128, 0.664);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: whitesmoke;
+    width: 1200px;
+    height: 500px;
 }
 
 .formularios div div input {
-    border-radius: 5px;
-    width: 300px;
     margin: 5px;
-    display: flex;
 }
 
 .contacto {
     display: flex;
     justify-content: center;
-}
-
-.enviar {
-    width: 50px;
 }
 
 /*-------------MAIN-----Card Iframe----------------*/
@@ -352,30 +304,20 @@ footer h3 {
 }
 
 footer {
-    background-color: rgba(51, 59, 90, 255);
+    background-color: rgb(119, 67, 96);
 }
 
 /*---------------------------------MEDIA QUERIES----------------------------------*/
 
+@media screen and (max-width:1077px) {
+    header nav div div ul li {
+        margin: 10px;
+    }
+}
+
 @media screen and (max-width:984px) {
     .hero {
         color: black;
-    }
-}
-
-@media screen and (max-width:942px) {
-    header {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:702px) {
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: 10px;
     }
 }
 
@@ -421,11 +363,5 @@ footer {
     .membresias div img {
         width: 300px;
         height: 200px;
-    }
-}
-
-@media screen and (max-width:343px) {
-    header nav div {
-        flex-direction: column;
     }
 }
