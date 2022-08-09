@@ -35,7 +35,7 @@
 
 /*---------------------------------HEADER----------------------------------*/
 header {
-    background-color: rgb(76, 58, 81);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(157, 20, 20, 1) 35%, rgba(0, 212, 255, 1) 100%);
     display: flex;
     justify-content: center;
 }
@@ -233,8 +233,8 @@ main {
 
 /*-------------MAIN-----Page playstation y Xbox----------------*/
 
-.play div img {
-    width: 287px;
+.play div div div img {
+    width: 265px;
     height: 200px;
 }
 
@@ -255,8 +255,6 @@ main {
 
 .formularios {
     color: whitesmoke;
-    width: 1200px;
-    height: 500px;
 }
 
 .formularios div div input {
@@ -304,7 +302,7 @@ footer h3 {
 }
 
 footer {
-    background-color: rgb(119, 67, 96);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(157, 20, 20, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 /*---------------------------------MEDIA QUERIES----------------------------------*/
@@ -318,13 +316,6 @@ footer {
 @media screen and (max-width:984px) {
     .hero {
         color: black;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .play div div {
-        width: 300px;
-        height: 300px;
     }
 }
 
@@ -362,6 +353,18 @@ footer {
 
     .membresias div img {
         width: 300px;
+        height: 200px;
+    }
+
+    .play div div div img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .play div div div img {
+        width: 200px;
         height: 200px;
     }
 }
