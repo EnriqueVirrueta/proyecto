@@ -1,0 +1,33 @@
+header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(157, 20, 20, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                margin: 20px;
+                transition: 3s;
+
+                a {
+                    text-decoration: none;
+                    font-family: 'Press Start 2P', cursive;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

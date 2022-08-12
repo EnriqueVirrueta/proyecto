@@ -1,0 +1,27 @@
+    /*---------------------------------FOOTER----------------------------------*/
+    footer {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(157, 20, 20, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+    }
