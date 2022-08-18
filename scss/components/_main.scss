@@ -1,3 +1,6 @@
+@import "../base/maps";
+@import "../base/_extend.scss";
+
 /*-------------MAIN-----Index----------------*/
 main {
     background-image: url("../img/mainfondo4.jpg");
@@ -17,9 +20,7 @@ main {
     }
 
     .juegos {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        @extend %flex;
 
         div {
             width: 400px;
@@ -50,21 +51,19 @@ main {
                 margin-bottom: 20px;
             }
 
-            a {
-                text-decoration: none;
-                background-color: rgba(182, 12, 12, 0.822);
-                color: rgb(0, 0, 0);
-                padding: 5px;
-                border-radius: 5px;
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
             }
         }
     }
 
     /*-------------MAIN-----Card Accesorios----------------*/
     .accesorios {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        @extend %flex;
 
         div {
             width: 400px;
@@ -95,21 +94,19 @@ main {
                 margin-bottom: 20px;
             }
 
-            a {
-                text-decoration: none;
-                background-color: rgba(182, 12, 12, 0.822);
-                color: rgb(0, 0, 0);
-                padding: 5px;
-                border-radius: 5px;
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
             }
         }
     }
 
     /*-------------MAIN-----Card membresias----------------*/
     .membresias {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        @extend %flex;
 
         div {
             width: 400px;
@@ -140,12 +137,12 @@ main {
                 margin-bottom: 20px;
             }
 
-            a {
-                text-decoration: none;
-                background-color: rgba(182, 12, 12, 0.822);
-                color: rgb(0, 0, 0);
-                padding: 5px;
-                border-radius: 5px;
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
             }
         }
     }
