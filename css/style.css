@@ -141,7 +141,8 @@ main .card {
 
 /*-------------MAIN-----Page contacto y registro----------------*/
 .contacto {
-  padding: 20px; }
+  padding: 20px;
+  color: white; }
 
 /*---------------------------------FOOTER----------------------------------*/
 footer {
